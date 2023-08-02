@@ -1,0 +1,9 @@
+<h3>Personajes</h3>
+        <hr>
+        <ul>
+            <li *ngFor="let personaje of personajes, " class="d-flex justify-content-between">
+                {{personaje.nombre}} - {{personaje.poder | number}}
+                <button class="btn btn-danger">X</button>
+            </li>
+        </ul>
+        
